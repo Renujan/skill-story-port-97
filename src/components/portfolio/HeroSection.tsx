@@ -22,19 +22,19 @@ const HeroSection = () => {
         <div className="text-center space-y-6 md:space-y-8 animate-fade-in">
           {/* Main Portfolio Heading */}
           <div className="space-y-4 md:space-y-6">
-            <h1 className="text-2xl sm:text-4xl lg:text-6xl font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-glow to-accent leading-tight overflow-hidden">
+            <h1 className="text-2xl sm:text-4xl lg:text-6xl font-inter font-bold leading-tight overflow-hidden">
               <div className="relative inline-block">
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white via-primary-glow to-accent overflow-hidden whitespace-nowrap border-r-2 border-primary animate-typing" style={{animation: 'typing 3s steps(12, end) 0.5s forwards, blink 1s infinite 0.5s'}}>
+                <span className="block text-white overflow-hidden whitespace-nowrap border-r-2 border-white animate-typing" style={{animation: 'typing 3s steps(12, end) 0.5s forwards, blink 1s infinite 0.5s'}}>
                   PROFESSIONAL
                 </span>
               </div>
               <div className="relative inline-block">
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-accent via-primary to-white overflow-hidden whitespace-nowrap border-r-2 border-primary animate-typing" style={{animation: 'typing 2s steps(6, end) 4s forwards, blink 1s infinite 4s'}}>
+                <span className="block text-yellow-400 overflow-hidden whitespace-nowrap border-r-2 border-yellow-400 animate-typing" style={{animation: 'typing 2s steps(6, end) 4s forwards, blink 1s infinite 4s'}}>
                   SKILLS
                 </span>
               </div>
               <div className="relative inline-block">
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary-glow via-white to-accent overflow-hidden whitespace-nowrap border-r-2 border-primary animate-typing" style={{animation: 'typing 3s steps(9, end) 6.5s forwards, blink 1s infinite 6.5s'}}>
+                <span className="block text-blue-400 overflow-hidden whitespace-nowrap border-r-2 border-blue-400 animate-typing" style={{animation: 'typing 3s steps(9, end) 6.5s forwards, blink 1s infinite 6.5s'}}>
                   PORTFOLIO
                 </span>
               </div>
@@ -75,14 +75,24 @@ const HeroSection = () => {
           
           {/* Contact Info */}
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-6 text-white/90 text-xs sm:text-sm animate-fade-in px-4">
-            <div className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-2 hover:bg-white/20 transition-smooth">
+            <Button 
+              variant="ghost" 
+              size="sm"
+              className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-2 hover:bg-white/20 transition-smooth text-white border-0 h-auto min-h-0"
+              onClick={() => window.open('tel:+94767909473', '_self')}
+            >
               <Phone className="w-4 h-4 flex-shrink-0" />
               <span className="truncate">+94 767909473</span>
-            </div>
-            <div className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-2 hover:bg-white/20 transition-smooth">
+            </Button>
+            <Button 
+              variant="ghost" 
+              size="sm"
+              className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-2 hover:bg-white/20 transition-smooth text-white border-0 h-auto min-h-0"
+              onClick={() => window.open('mailto:kasthuryruban002@gmail.com', '_self')}
+            >
               <Mail className="w-4 h-4 flex-shrink-0" />
               <span className="truncate">kasthuryruban002@gmail.com</span>
-            </div>
+            </Button>
             <div className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-2 hover:bg-white/20 transition-smooth">
               <MapPin className="w-4 h-4 flex-shrink-0" />
               <span className="truncate">Virachchi Lane, Uduppiddy, Jaffna</span>

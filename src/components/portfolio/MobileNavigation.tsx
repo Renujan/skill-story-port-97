@@ -32,12 +32,12 @@ const MobileNavigation = () => {
             <Button 
               variant="secondary" 
               size="icon" 
-              className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white/30 shadow-glow"
+              className="w-12 h-12 rounded-full bg-black/80 backdrop-blur-sm border-black/60 text-white hover:bg-black/90 shadow-glow"
             >
               <Menu className="w-6 h-6" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-80 bg-gradient-secondary text-white border-white/20">
+          <SheetContent side="right" className="w-80 bg-black/90 backdrop-blur-sm text-white border-white/20">
             <div className="flex flex-col gap-4 mt-8">
               <div className="text-center mb-8">
                 <h2 className="text-2xl font-bold">Navigation</h2>
@@ -63,12 +63,12 @@ const MobileNavigation = () => {
 
       {/* Desktop Floating Navigation */}
       <div className="hidden md:block fixed top-1/2 right-6 transform -translate-y-1/2 z-50">
-        <nav className="flex flex-col gap-3 bg-white/10 backdrop-blur-sm rounded-full p-3 border border-white/20">
+        <nav className="flex flex-col gap-3 bg-black/80 backdrop-blur-sm rounded-full p-3 border border-black/60">
           {navItems.map((item) => (
             <button
               key={item.href}
               onClick={() => scrollToSection(item.href)}
-              className="w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 transition-colors flex items-center justify-center text-white hover:scale-110 transform duration-200"
+              className="w-12 h-12 rounded-full bg-black/60 hover:bg-black/80 transition-colors flex items-center justify-center text-white hover:scale-110 transform duration-200"
               title={item.label}
             >
               <item.icon className="w-5 h-5" />
